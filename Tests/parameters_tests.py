@@ -43,7 +43,7 @@ class MyTestCase(unittest.TestCase):
         and a negative number
         :return: none
         """
-        pass
+
 
     def test_adding_two_negatives(self):
         """
@@ -51,7 +51,7 @@ class MyTestCase(unittest.TestCase):
         negative numbers.
         :return: none
         """
-        pass
+
 
 
 if __name__ == '__main__':
