@@ -23,7 +23,7 @@ def test_adding_one_negative(self):
 
 def test_adding_two_negatives(self):
     """
-    Delete the word "pass" and write a test that will make sure your function works when adding two
-    negative numbers.
-    :return: none
-    """
+      Delete the word "pass" and write a test that will make sure your function works when adding a positive
+      and a negative number
+      :return: none
+      """
