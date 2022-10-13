@@ -6,8 +6,7 @@
 
 
 def areacalc(legnth, width):
-    area = legnth * width
-    return area
+    return legnth * width
 
 
 
@@ -16,3 +15,7 @@ width = 3
 area = areacalc(legnth, width)
 
 print(area)
+
+
+def totalsurfacearea(legnth, widht, height):
+    return legnth * width * height
