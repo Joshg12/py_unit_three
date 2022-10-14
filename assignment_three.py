@@ -13,19 +13,19 @@ def areacalc(legnth, width):
 legnth = 4
 width = 3
 height = 9
-
-
-'''
-
-def userwidth():
-
-def userheight():
-def userlegnth():
-
-
 area = areacalc(legnth, width)
 
 print("The area is: ",area)
+
+
+'''
+def userwidth():
+    userwidth = input("What is the width of your rectangular prism?")
+def userheight():
+    userheight = input("What is the height of your rectangular prism")
+def userlegnth():
+    userlegnth = input("What is the legnth of your rectangular prism?")
+
 
 
 def rectangle_area(side1, side2):
@@ -42,5 +42,5 @@ def surfacearea(height, length, width):
 
 
 
-totalArea = surfacearea(height, legnth, width)
+totalArea = surfacearea(userwidth, userheight, userlegnth)
 print (totalArea)
