@@ -4,12 +4,12 @@
 
 #Area of a rectangular prism calculator
 
-
+'''
 def areacalc(legnth, width):
     return legnth * width
 
 
-'''
+
 legnth = 4
 width = 3
 height = 9
@@ -20,11 +20,14 @@ print("The area is: ",area)
 
 '''
 def userwidth():
-    userwidth = input("What is the width of your rectangular prism?")
+    userwidth = int(input("What is the width of your rectangular prism?"))
+    return userwidth
 def userheight():
-    userheight = input("What is the height of your rectangular prism")
+    userheight = int(input("What is the height of your rectangular prism"))
+    return userheight
 def userlegnth():
-    userlegnth = input("What is the legnth of your rectangular prism?")
+    userlegnth = int(input("What is the legnth of your rectangular prism?"))
+    return userlegnth
 
 
 
@@ -38,9 +41,12 @@ def surfacearea(height, length, width):
     left = rectangle_area(height, width)
     right = rectangle_area(height, width)
     total = (top + bottom + front + back + left + right)
+    print(total)
     return total
 
+userheight()
+userlegnth()
+userwidth()
+surfacearea(userheight, userlegnth, userwidth)
 
 
-totalArea = surfacearea(userwidth, userheight, userlegnth)
-print (totalArea)
