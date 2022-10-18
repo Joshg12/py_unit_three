@@ -28,7 +28,7 @@ def userheight():
 def userlegnth():
     userlegnth = int(input("What is the legnth of your rectangular prism?"))
     return userlegnth
-
+#This code takes user input for the width, legnth, and height.
 
 
 def rectangle_area(side1, side2):
@@ -41,12 +41,33 @@ def surfacearea(height, length, width):
     left = rectangle_area(height, width)
     right = rectangle_area(height, width)
     total = (top + bottom + front + back + left + right)
-    print(total)
     return total
 
-userheight()
-userlegnth()
-userwidth()
-surfacearea(userheight, userlegnth, userwidth)
+#This code defines the area and surface area.
+
+def main():
+    the_height = userheight()
+    the_legnth = userlegnth()
+    the_width = userwidth()
+    total = surfacearea(the_height, the_legnth, the_width)
+    print("The total is",total)
+
+main()
+
+#This code prints the user's total surface area.
 
 
+def unit_test(self):
+    import sys
+    from io import StringIO
+
+    saved_stdout = sys.stdout
+    try:
+        out = StringIO()
+        sys.stdout = out
+        output = out.getvalue().strip()
+        assert output == "Total Area"
+    finally:
+        sys.stdout = saved_stdout
+
+#This is the unit test
